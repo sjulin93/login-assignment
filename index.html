@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simsällskapet</title>
+  </head>
+  <body>
+    <!--navmeny med loggain/ut knapp-->
+    <nav>
+      <div class="meny">
+        <div>
+          <h1>Simsällskapet</h1>
+        </div>
+        <div class="logga-knappen">
+          <button id="show-login">Logga in</button>
+        </div>
+        <div class="logout">
+          <button id="logoutBtn">Logga ut</button>
+          <span>Du är inloggad </span>
+        </div>
+      </div>
+    </nav>
+    <!--login formuläret-->
+    <section class="container forms">
+      <div class="form form-login">
+        <div class="close-btn">&times;</div>
+        <div class="form content">
+          <header class="header">Login</header>
 
+          <form action="#">
+            <div class="field input-field">
+              <input
+                type="text"
+                placeholder="Användarnamn"
+                id="username"
+                class="input"
+              />
+            </div>
+
+            <div class="field input-field">
+              <input
+                type="password"
+                placeholder="Lösenord"
+                id="password"
+                class="input"
+              />
+              <p class="wrongPw">Felaktigt användarnamn/lösenord</p>
+            </div>
+
+            <div class="form-link">
+              <a href="#" class="forgot-pass link">Glömt lösenord?</a>
+            </div>
+
+            <div class="field button-field">
+              <button class="button login-btn">Login</button>
+            </div>
+
+            <div class="form-link">
+              <span>Redan medlem? </span>
+              <a href="#" class="nyMedlem link">Bli medlem</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
