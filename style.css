@@ -1,0 +1,166 @@
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/*reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*navmeny*/
+nav{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.meny{
+ display:flex;
+ justify-content:space-around;
+ align-items: center;
+ padding: 2%;
+ flex-wrap: wrap;
+}
+.meny button{
+    padding:0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    border:1px solid #777;
+
+}
+.meny button:hover{
+    background-color: #999;
+}
+.logga-knappen{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.logout{
+    position:absolute;
+    right:16.5%;
+    display:none;
+    
+}
+.logout.logged{
+    display:block;
+}
+.logga-knappen .logged{
+    display:none;
+}
+
+
+
+/*Login form*/
+
+.container{
+
+    position:absolute;
+    top:-150%;
+    left:50%;
+    opacity: 0;
+    transform:translate(-50%, -50%) scale(1.25);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 200ms, 
+                transform 20ms ease-in-out 200ms
+} 
+.container.activate{
+    top:50%;
+    opacity: 1;
+    transform:translate(-50%, -50%) scale(1.25);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 200ms, 
+                transform 20ms ease-in-out 200ms
+}
+
+.form .close-btn{
+    position:absolute;
+    top:10px;
+    right:38%;
+    width: 15px;
+    height: 15px;
+    background: #999;
+    color:#eee;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.form{
+    background-color: #fff;
+    border-radius: 5%;
+    max-width: 430px;
+    width: 100%;
+    padding:3%;
+}
+.form-login{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#333;
+}
+form{
+    margin-top: 1rem;
+}
+form .field{
+    height: 2.5rem;
+    width: 100%;
+    margin-top:1rem;
+}
+.field input,
+.field button
+{
+    height: 100%;
+    width: 100%;
+    border:none;
+     border-radius: 10px;
+    font-weight: 500;
+
+}
+.field button:hover{
+    background-color: #666;
+    cursor: pointer;
+}
+.field input{
+    border: 1px solid #777;
+    padding: 0 20px;
+}
+
+.form-link{
+    margin-top: 1rem;
+    text-align: center;
+}
+.form-link span, .form-link a{
+    font-size: small;
+    font-weight: bold;
+}
+.form a{
+    color:#333;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+
+}
+
+.wrongPw{
+    color:red;
+    font-size: 10px;
+    text-align: center;
+    padding:1.5%;
+    display:none;
+}
+.wrongPw.error{
+    display:block;
+}
