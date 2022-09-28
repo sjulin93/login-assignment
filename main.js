@@ -2,7 +2,7 @@
 
 const showLogin = document.querySelector("#show-login");
 const showLogout = document.querySelector(".logout");
-const popup = document.querySelector(".container");
+const popup = document.querySelector(".form-container");
 const closeBtn = document.querySelector(".form .close-btn");
 const loginBtn = document.querySelector(".login-btn");
 const meny = document.querySelector(".logga-knappen");
@@ -14,6 +14,7 @@ const logoutBtn= document.getElementById("logoutBtn");
 
 showLogin.addEventListener("click", function () {
   popup.classList.toggle("activate");
+
 });
 //funktion för att kunna stänga med X knappen i loginrutan
 closeBtn.addEventListener("click", function () {
