@@ -18,7 +18,7 @@ nav{
  justify-content:space-around;
  align-items: center;
  padding: 2%;
- flex-wrap: wrap;
+
 }
 .meny button{
     padding:0.5rem;
@@ -40,16 +40,21 @@ nav{
 
 }
 .logout{
-    position:absolute;
-    right:16.5%;
+    display:flex;
     display:none;
     
 }
 .logout.logged{
-    display:block;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 .logga-knappen .logged{
     display:none;
+}
+.logout button{
+    margin-right:20px;
 }
 
 
@@ -163,4 +168,15 @@ form .field{
 }
 .wrongPw.error{
     display:block;
+}
+@media screen and (max-width:480px) {
+    .meny{
+        flex-direction: column;
+    }
+    .logout.logged{
+        flex-direction: column;
+    }
+    .logout button{
+        margin:10px 0;
+    }
 }
