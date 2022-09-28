@@ -61,7 +61,7 @@ nav{
 
 /*Login form*/
 
-.container{
+.form-container{
 
     position:absolute;
     top:-150%;
@@ -77,19 +77,21 @@ nav{
                 opacity 200ms ease-in-out 200ms, 
                 transform 20ms ease-in-out 200ms
 } 
-.container.activate{
+.form-container.activate{
     top:50%;
     opacity: 1;
+    z-index: 2;
     transform:translate(-50%, -50%) scale(1.25);
     transition: top 0ms ease-in-out 0ms,
-                opacity 200ms ease-in-out 200ms, 
-                transform 20ms ease-in-out 200ms
+                opacity 100ms ease-in-out 100ms, 
+                transform 20ms ease-in-out 100ms
+                
 }
 
 .form .close-btn{
     position:absolute;
     top:10px;
-    right:38%;
+    right:3%;
     width: 15px;
     height: 15px;
     background: #999;
@@ -169,6 +171,66 @@ form .field{
 .wrongPw.error{
     display:block;
 }
+
+/*vackground*/
+
+.middle-container{
+    display:flex;
+    justify-content: center;
+    
+}
+.welcome-container{
+    background-image: url(pictures/swim2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 15% 0 15%;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50vh;
+    filter: drop-shadow(0px 0px 5px #555);
+}
+.rules{
+    text-align: center;
+    padding-top:2%;
+    width:100%;
+    
+}
+.rules-header{
+    text-decoration: underline;
+    color:#666;
+}
+.rules-text{
+    line-height: 1.8rem;
+    padding:2% 20%;
+}
+
+/*bottom container*/
+footer{
+    background: #e3f6f5; 
+    padding:2% 0;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+.contect{
+    display:flex;
+    flex-direction: row;
+
+    
+}
+.contact-items{
+    padding-top:0.7rem;
+}
+.contact-items a{
+    color:#555;
+}
+
+
+/*neduaqyaries*/
+
 @media screen and (max-width:480px) {
     .meny{
         flex-direction: column;
