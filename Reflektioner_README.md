@@ -1,7 +1,7 @@
 # login-assignment
 HTML: 
 
-html-koden är rätt så straight forward. Jag delade up min kod i olika sektioner för att göra det enklare att följa de olika delarna på webbsidan. Det som var spännande här var loginformuläret där jag var tvungen att lägga till klasser, ID osv för att kunna styla med css så att min inloggningsruta dyker upp i mitten.
+html-koden är rätt så straight forward. Jag delade up min kod i olika sektioner (detta med olika divs) för att göra det enklare att följa de olika delarna på webbsidan. Det som var spännande här var loginformuläret där jag var tvungen att lägga till klasser, ID osv för att kunna styla med css så att min inloggningsruta dyker upp i mitten.
 
 CSS:
 
