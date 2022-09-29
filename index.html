@@ -1,98 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="style.css">
-    <title>Simsällskapet</title>
-  </head>
-  <body>
-    <!--navmeny med loggain/ut knapp-->
-    <nav>
-      <div class="meny">
-        <div>
-          <h1>Simsällskapet</h1>
-        </div>
-        <div class="logga-knappen">
-          <button id="show-login">Logga in</button>
-        </div>
-        <div class="logout">
-          <button id="logoutBtn">Logga ut</button>
-          <span class="inloggad">Du är inloggad </span>
-        </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Simsällskapet</title>
+</head>
+
+<body>
+  <!--navmeny med loggain/ut knapp-->
+  <nav>
+    <div class="meny">
+      <div>
+        <h1>Simsällskapet</h1>
       </div>
-    </nav>
-    <!--login formuläret-->
-    <div class="container forms">
-      <div class="form form-login form-container">
-        <div class="close-btn">&times;</div>
-        <div class="form content">
-          <header class="header">Logga in</header>
-
-          <form action="#">
-            <div class="field input-field">
-              <input type="text" placeholder="Användarnamn" id="username" class="input">
-            </div>
-
-            <div class="field input-field">
-              <input  type="password" placeholder="Lösenord" id="password" class="input">
-              <p class="wrongPw">Felaktigt användarnamn/lösenord</p>
-            </div>
-
-            <div class="form-link">
-              <a href="#" class="forgot-pass link">Glömt lösenord?</a>
-            </div>
-
-            <div class="field button-field">
-              <button class="button login-btn">Logga in</button>
-            </div>
-
-            <div class="form-link">
-              <span>Redan medlem? </span>
-              <a href="#" class="nyMedlem link">Bli medlem</a>
-            </div>
-          </form>
-        </div>
+      <div class="logga-knappen">
+        <button id="show-login">Logga in</button>
+      </div>
+      <div class="logout">
+        <button id="logoutBtn">Logga ut</button>
+        <span class="inloggad">Du är inloggad </span>
       </div>
     </div>
-    <!---section för bakgrundsbild och förhållningsregler (flexibelt att göra till lista om kund önskar)-->
-    <div >
-      <div class="welcome-container"></div>
-      <div class="rules">
-        <h2 class="rules-header">Förhållningsregler:</h2>
-        <p class="rules-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          neque atque in necessitatibus fuga, praesentium vitae maiores,
-          pariatur culpa ipsam placeat nihil aliquid vero. Delectus ullam beatae
-          laudantium voluptate corporis! In saepe suscipit sapiente voluptates
-          ipsam? Consequuntur ad nostrum eius tempora maxime, voluptatum modi
-          itaque atque explicabo harum iste nulla iusto autem tempore cum nemo
-          optio laborum, soluta quam eum. Saepe quisquam voluptatibus maiores
-          eaque sed molestias dolores enim tempora animi ipsum rem in aut quod
-          illum dicta sunt, eius soluta aperiam. Tenetur, eos odit. Quod facilis
-          reprehenderit temporibus. At? Laboriosam nesciunt exercitationem
-          similique quibusdam sed doloribus voluptatibus, dolorum laudantium?
-          Consequatur, aut! Consequatur quidem harum eligendi eum consectetur a,
-          pariatur repellendus facere quod sunt possimus! Alias consectetur
-          beatae quos dicta!
-        </p>
+  </nav>
+  <!--login formuläret-->
+  <div class="container forms">
+    <div class="form form-login form-container">
+      <div class="close-btn">&times;</div>
+      <div class="form content">
+        <header class="header">Logga in</header>
+
+        <form action="#">
+          <div class="field input-field">
+            <input type="text" placeholder="Användarnamn" id="username" class="input">
+          </div>
+
+          <div class="field input-field">
+            <input type="password" placeholder="Lösenord" id="password" class="input">
+            <p class="wrongPw">Felaktigt användarnamn/lösenord</p>
+          </div>
+
+          <div class="form-link">
+            <a href="#" class="forgot-pass link">Glömt lösenord?</a>
+          </div>
+
+          <div class="field button-field">
+            <button class="button login-btn">Logga in</button>
+          </div>
+
+          <div class="form-link">
+            <span>Redan medlem? </span>
+            <a href="#" class="nyMedlem link">Bli medlem</a>
+          </div>
+        </form>
       </div>
     </div>
-    <!--footer för kontaktinfo (kan ändra färg och info efter kundens efterfrågan)-->
-    <footer>
-      <div class="contact">
-        <h3 class="contact-items">Kontakta oss:</h3>
+  </div>
+  <!---section för bakgrundsbild och förhållningsregler (flexibelt att göra till lista om kund önskar)-->
+  <div>
+    <div class="welcome-container"></div>
+    <div class="rules">
+      <h2 class="rules-header">Förhållningsregler:</h2>
+      <p class="rules-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+        neque atque in necessitatibus fuga, praesentium vitae maiores,
+        pariatur culpa ipsam placeat nihil aliquid vero. Delectus ullam beatae
+        laudantium voluptate corporis! In saepe suscipit sapiente voluptates
+        ipsam? Consequuntur ad nostrum eius tempora maxime, voluptatum modi
+        itaque atque explicabo harum iste nulla iusto autem tempore cum nemo
+        optio laborum, soluta quam eum. Saepe quisquam voluptatibus maiores
+        eaque sed molestias dolores enim tempora animi ipsum rem in aut quod
+        illum dicta sunt, eius soluta aperiam. Tenetur, eos odit. Quod facilis
+        reprehenderit temporibus. At? Laboriosam nesciunt exercitationem
+        similique quibusdam sed doloribus voluptatibus, dolorum laudantium?
+        Consequatur, aut! Consequatur quidem harum eligendi eum consectetur a,
+        pariatur repellendus facere quod sunt possimus! Alias consectetur
+        beatae quos dicta!
+      </p>
+    </div>
+  </div>
+  <!--footer för kontaktinfo (kan ändra färg och info efter kundens efterfrågan)-->
+  <footer>
+    <div class="contact">
+      <h3 class="contact-items">Kontakta oss:</h3>
 
-        <h4 class="contact-items">
-          <a href="tel:+46707896297">070-789 62 97</a>
-        </h4>
-        <h4 class="contact-items">
-          <a href="mailto:sjulin.simon@gmail.com">sjulin.simon@gmail.com</a>
-        </h4>
-      </div>
-    </footer>
+      <h4 class="contact-items">
+        <a href="tel:+46707896297">070-789 62 97</a>
+      </h4>
+      <h4 class="contact-items">
+        <a href="mailto:sjulin.simon@gmail.com">sjulin.simon@gmail.com</a>
+      </h4>
+    </div>
+  </footer>
 
-    <script src="main.js"></script>
-  </body>
+  <script src="main.js"></script>
+</body>
+
 </html>

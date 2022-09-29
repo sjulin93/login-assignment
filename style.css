@@ -2,243 +2,273 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 /*reset*/
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
 /*navmeny*/
-nav{
+nav {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.meny{
- display:flex;
- justify-content:space-around;
- align-items: center;
- padding: 2%;
+
+.meny {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
 
 }
-.meny button{
-    padding:0.5rem;
+
+.meny button {
+    padding: 0.5rem;
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
     border-radius: 10px;
-    border:1px solid #777;
+    border: 1px solid #777;
 
 }
-.meny button:hover{
+
+.meny button:hover {
     background-color: #999;
 }
-.logga-knappen{
-    display:flex;
+
+.logga-knappen {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
 
 }
-.logout{
-    display:flex;
-    display:none;
-    
+
+.logout {
+    display: flex;
+    display: none;
+
 }
-.logout.logged{
-    display:flex;
+
+.logout.logged {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.logga-knappen .logged{
-    display:none;
+
+.logga-knappen .logged {
+    display: none;
 }
-.logout button{
-    margin-right:20px;
+
+.logout button {
+    margin-right: 20px;
 }
 
 
 
 /*Login form*/
 
-.form-container{
+.form-container {
 
-    position:absolute;
-    top:-150%;
-    left:50%;
+    position: absolute;
+    top: -150%;
+    left: 50%;
     opacity: 0;
-    transform:translate(-50%, -50%) scale(1.25);
+    transform: translate(-50%, -50%) scale(1.25);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fff;
     transition: top 0ms ease-in-out 200ms,
-                opacity 200ms ease-in-out 200ms, 
-                transform 20ms ease-in-out 200ms
-} 
-.form-container.activate{
-    top:50%;
-    opacity: 1;
-    z-index: 2;
-    transform:translate(-50%, -50%) scale(1.25);
-    transition: top 0ms ease-in-out 0ms,
-                opacity 100ms ease-in-out 100ms, 
-                transform 20ms ease-in-out 100ms
-                
+        opacity 200ms ease-in-out 200ms,
+        transform 20ms ease-in-out 200ms
 }
 
-.form .close-btn{
-    position:absolute;
-    top:10px;
-    right:3%;
+.form-container.activate {
+    top: 50%;
+    opacity: 1;
+    z-index: 2;
+    transform: translate(-50%, -50%) scale(1.25);
+    transition: top 0ms ease-in-out 0ms,
+        opacity 100ms ease-in-out 100ms,
+        transform 20ms ease-in-out 100ms
+}
+
+.form .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 3%;
     width: 15px;
     height: 15px;
     background: #999;
-    color:#eee;
+    color: #eee;
     line-height: 15px;
     text-align: center;
     border-radius: 15px;
     cursor: pointer;
 }
-.form{
+
+.form {
     background-color: #fff;
     border-radius: 5%;
     max-width: 430px;
     width: 100%;
-    padding:3%;
+    padding: 3%;
 }
-.form-login{
+
+.form-login {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.header{
+
+.header {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
-    color:#333;
+    color: #333;
 }
-form{
+
+form {
     margin-top: 1rem;
 }
-form .field{
+
+form .field {
     height: 2.5rem;
     width: 100%;
-    margin-top:1rem;
+    margin-top: 1rem;
 }
+
 .field input,
-.field button
-{
+.field button {
     height: 100%;
     width: 100%;
-    border:none;
-     border-radius: 10px;
+    border: none;
+    border-radius: 10px;
     font-weight: 500;
 
 }
-.field button:hover{
+
+.field button:hover {
     background-color: #666;
     cursor: pointer;
 }
-.field input{
+
+.field input {
     border: 1px solid #777;
     padding: 0 20px;
 }
 
-.form-link{
+.form-link {
     margin-top: 1rem;
     text-align: center;
 }
-.form-link span, .form-link a{
+
+.form-link span,
+.form-link a {
     font-size: small;
     font-weight: bold;
 }
-.form a{
-    color:#333;
+
+.form a {
+    color: #333;
     text-decoration: none;
 }
-.form a:hover{
+
+.form a:hover {
     text-decoration: underline;
 
 }
 
-.wrongPw{
-    color:red;
+.wrongPw {
+    color: red;
     font-size: 10px;
     text-align: center;
-    padding:1.5%;
-    display:none;
-}
-.wrongPw.error{
-    display:block;
+    padding: 1.5%;
+    display: none;
 }
 
-/*vackground*/
+/*förberedelse för att JS ska funka vid felaktiglösen/anv namn, lägger till en klass här*/
+.wrongPw.error {
+    display: block;
+}
 
-.middle-container{
-    display:flex;
+/*background img + medlemsregler för senare (lorem ipsum)*/
+
+.middle-container {
+    display: flex;
     justify-content: center;
-    
+
 }
-.welcome-container{
+
+.welcome-container {
     background-image: url(pictures/swim2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5% 15% 0 15%;
     text-align: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 50vh;
     filter: drop-shadow(0px 0px 5px #555);
 }
-.rules{
+
+.rules {
     text-align: center;
-    padding-top:2%;
-    width:100%;
-    
+    padding-top: 2%;
+    width: 100%;
+
 }
-.rules-header{
+
+.rules-header {
     text-decoration: underline;
-    color:#666;
+    color: #666;
 }
-.rules-text{
+
+.rules-text {
     line-height: 1.8rem;
-    padding:2% 20%;
+    padding: 2% 20%;
 }
 
 /*bottom container*/
-footer{
-    background: #e3f6f5; 
-    padding:2% 0;
+footer {
+    background: #e3f6f5;
+    padding: 2% 0;
     text-align: center;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
-.contect{
-    display:flex;
+
+.contect {
+    display: flex;
     flex-direction: row;
 
-    
+
 }
-.contact-items{
-    padding-top:0.7rem;
+
+.contact-items {
+    padding-top: 0.7rem;
 }
-.contact-items a{
-    color:#555;
+
+.contact-items a {
+    color: #555;
 }
 
 
-/*neduaqyaries*/
+/*mediaquaries*/
 
 @media screen and (max-width:480px) {
-    .meny{
+    .meny {
         flex-direction: column;
     }
-    .logout.logged{
+
+    .logout.logged {
         flex-direction: column;
     }
-    .logout button{
-        margin:10px 0;
+
+    .logout button {
+        margin: 10px 0;
     }
 }
