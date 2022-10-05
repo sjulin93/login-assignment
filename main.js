@@ -1,4 +1,4 @@
-//här skapar jag mina variablar för att kunna använda i funktionen för popup
+
 
 const showLogin = document.querySelector("#show-login");
 const showLogout = document.querySelector(".logout");
@@ -10,21 +10,16 @@ const isLoggedIn = localStorage.getItem("isLoggedIn");
 const logoutBtn= document.getElementById("logoutBtn");
 
 
-//funktion för visa popup loginruta
+
 
 showLogin.addEventListener("click", function () {
   popup.classList.toggle("activate");
 
 });
-//funktion för att kunna stänga med X knappen i loginrutan
+
 closeBtn.addEventListener("click", function () {
   popup.classList.remove("activate");
 });
-
-//----------------------------------------------//
-
-
-//valideringsfunktion
 
 loginBtn.addEventListener("click", function () {
   const username = document.getElementById("username").value;
@@ -41,7 +36,7 @@ loginBtn.addEventListener("click", function () {
   }
 });
 
-//funktion för att kolla om inloggningsuppgifter finns sparade och håller dig inloggad
+
 
 
 if(isLoggedIn){
@@ -52,7 +47,7 @@ if(isLoggedIn){
     showLogout.classList.remove("logged");
 }
 
-//logga ut function
+
 
 logoutBtn.addEventListener("click", function(){
     showLogin.classList.remove("logged");

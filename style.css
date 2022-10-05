@@ -1,7 +1,7 @@
-/*import fonts*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-/*reset*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/*navmeny*/
+
 nav {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -67,7 +67,7 @@ nav {
 
 
 
-/*Login form*/
+
 
 .form-container {
 
@@ -188,12 +188,12 @@ form .field {
     display: none;
 }
 
-/*förberedelse för att JS ska funka vid felaktiglösen/anv namn, lägger till en klass här*/
+
 .wrongPw.error {
     display: block;
 }
 
-/*background img + medlemsregler för senare (lorem ipsum)*/
+
 
 .middle-container {
     display: flex;
@@ -232,7 +232,7 @@ form .field {
     padding: 2% 20%;
 }
 
-/*bottom container*/
+
 footer {
     background: #e3f6f5;
     padding: 2% 0;
@@ -257,7 +257,7 @@ footer {
 }
 
 
-/*mediaquaries*/
+
 
 @media screen and (max-width:480px) {
     .meny {
